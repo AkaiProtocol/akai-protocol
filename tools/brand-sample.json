@@ -1,0 +1,761 @@
+{
+ "method": "k-means k=8 RGB, farthest-point init, 12 iterations, snapped to nearest real pixel",
+ "files": [
+  {
+   "file": "brand/LOGO AKAI JPG.jpg.jpeg",
+   "bytes": 246602,
+   "container": "jpeg",
+   "jpeg": {
+    "height": 2000,
+    "width": 2000,
+    "components": 3,
+    "progressive": false
+   },
+   "size": [
+    2000,
+    2000
+   ],
+   "kmeans": [
+    {
+     "share": 0.9343,
+     "centroid": "#f8f4f1",
+     "snapped": "#f8f4f1",
+     "x": 0,
+     "y": 0
+    },
+    {
+     "share": 0.0444,
+     "centroid": "#fd3a50",
+     "snapped": "#fd394f",
+     "x": 992,
+     "y": 604
+    },
+    {
+     "share": 0.0194,
+     "centroid": "#cb0f2f",
+     "snapped": "#cb0f30",
+     "x": 1266,
+     "y": 1048
+    },
+    {
+     "share": 0.0007,
+     "centroid": "#f498a3",
+     "snapped": "#f598a3",
+     "x": 937,
+     "y": 913
+    },
+    {
+     "share": 0.0006,
+     "centroid": "#f5d2d5",
+     "snapped": "#f6d2d4",
+     "x": 979,
+     "y": 846
+    },
+    {
+     "share": 0.0004,
+     "centroid": "#f76577",
+     "snapped": "#f76677",
+     "x": 653,
+     "y": 1138
+    },
+    {
+     "share": 0.0002,
+     "centroid": "#d6495f",
+     "snapped": "#d54a5f",
+     "x": 1504,
+     "y": 1394
+    },
+    {
+     "share": 0.0001,
+     "centroid": "#d11e3b",
+     "snapped": "#d11e3b",
+     "x": 1510,
+     "y": 1404
+    }
+   ]
+  },
+  {
+   "file": "brand/LOGO AKAI PNG...png",
+   "bytes": 237160,
+   "container": "png",
+   "ihdr": {
+    "width": 2000,
+    "height": 2000,
+    "bitDepth": 8,
+    "colorType": 6,
+    "interlace": 0
+   },
+   "alphaHistogram8": [
+    3737432,
+    1159,
+    1481,
+    1178,
+    732,
+    812,
+    1794,
+    255412
+   ],
+   "fullyTransparent": 3733598,
+   "pureBlackTransparent": 3733598,
+   "size": [
+    2000,
+    2000
+   ],
+   "kmeans": [
+    {
+     "share": 0.672,
+     "centroid": "#fd394f",
+     "snapped": "#fd394f",
+     "x": 989,
+     "y": 622
+    },
+    {
+     "share": 0.2966,
+     "centroid": "#ca0e2f",
+     "snapped": "#ca0e2f",
+     "x": 1245,
+     "y": 1073
+    },
+    {
+     "share": 0.0145,
+     "centroid": "#f04f63",
+     "snapped": "#fc4b59",
+     "x": 1265,
+     "y": 1026
+    },
+    {
+     "share": 0.006,
+     "centroid": "#e7768b",
+     "snapped": "#fc4b59",
+     "x": 1265,
+     "y": 1026
+    },
+    {
+     "share": 0.0055,
+     "centroid": "#f698a4",
+     "snapped": "#fc4b59",
+     "x": 1265,
+     "y": 1026
+    },
+    {
+     "share": 0.003,
+     "centroid": "#fbc3c3",
+     "snapped": "#fc4b59",
+     "x": 1265,
+     "y": 1026
+    },
+    {
+     "share": 0.002,
+     "centroid": "#fff8ff",
+     "snapped": "#fc4b59",
+     "x": 1265,
+     "y": 1026
+    },
+    {
+     "share": 0.0005,
+     "centroid": "#ff0000",
+     "snapped": "#cd0422",
+     "x": 1180,
+     "y": 1116
+    }
+   ]
+  },
+  {
+   "file": "brand/LOGO AKAI PNG.png",
+   "bytes": 382322,
+   "container": "png",
+   "ihdr": {
+    "width": 2000,
+    "height": 2000,
+    "bitDepth": 8,
+    "colorType": 6,
+    "interlace": 0
+   },
+   "alphaHistogram8": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4000000
+   ],
+   "fullyTransparent": 0,
+   "pureBlackTransparent": 0,
+   "size": [
+    2000,
+    2000
+   ],
+   "kmeans": [
+    {
+     "share": 0.9343,
+     "centroid": "#f8f4f1",
+     "snapped": "#f8f4f1",
+     "x": 0,
+     "y": 0
+    },
+    {
+     "share": 0.0443,
+     "centroid": "#fd3950",
+     "snapped": "#fd3950",
+     "x": 992,
+     "y": 604
+    },
+    {
+     "share": 0.0194,
+     "centroid": "#ca0f30",
+     "snapped": "#ca0f30",
+     "x": 1265,
+     "y": 1048
+    },
+    {
+     "share": 0.0006,
+     "centroid": "#f5d2d4",
+     "snapped": "#f6d2d3",
+     "x": 1140,
+     "y": 1055
+    },
+    {
+     "share": 0.0006,
+     "centroid": "#f49aa5",
+     "snapped": "#f59aa4",
+     "x": 714,
+     "y": 1042
+    },
+    {
+     "share": 0.0004,
+     "centroid": "#f67281",
+     "snapped": "#f67181",
+     "x": 1243,
+     "y": 988
+    },
+    {
+     "share": 0.0003,
+     "centroid": "#eb5064",
+     "snapped": "#f35263",
+     "x": 998,
+     "y": 819
+    },
+    {
+     "share": 0.0001,
+     "centroid": "#d22843",
+     "snapped": "#d32843",
+     "x": 1405,
+     "y": 1242
+    }
+   ]
+  },
+  {
+   "file": "reference/AKAI 1.jpg.jpeg",
+   "bytes": 102182,
+   "container": "jpeg",
+   "jpeg": {
+    "height": 900,
+    "width": 1600,
+    "components": 3,
+    "progressive": false
+   },
+   "size": [
+    1600,
+    900
+   ],
+   "kmeans": [
+    {
+     "share": 0.6259,
+     "centroid": "#fcf1f1",
+     "snapped": "#fcf2f1",
+     "x": 757,
+     "y": 0
+    },
+    {
+     "share": 0.187,
+     "centroid": "#fbccd7",
+     "snapped": "#fbcdd7",
+     "x": 1248,
+     "y": 32
+    },
+    {
+     "share": 0.0865,
+     "centroid": "#fba1b7",
+     "snapped": "#fba2b6",
+     "x": 1541,
+     "y": 168
+    },
+    {
+     "share": 0.07,
+     "centroid": "#f31f4d",
+     "snapped": "#f5204c",
+     "x": 1193,
+     "y": 350
+    },
+    {
+     "share": 0.0151,
+     "centroid": "#bc062c",
+     "snapped": "#bc062c",
+     "x": 1311,
+     "y": 439
+    },
+    {
+     "share": 0.0113,
+     "centroid": "#061417",
+     "snapped": "#061417",
+     "x": 231,
+     "y": 27
+    },
+    {
+     "share": 0.0023,
+     "centroid": "#7b8385",
+     "snapped": "#7a8285",
+     "x": 579,
+     "y": 589
+    },
+    {
+     "share": 0.0019,
+     "centroid": "#313b3e",
+     "snapped": "#313b3d",
+     "x": 71,
+     "y": 622
+    }
+   ]
+  },
+  {
+   "file": "reference/AKAI 2.jpg.jpeg",
+   "bytes": 108094,
+   "container": "jpeg",
+   "jpeg": {
+    "height": 900,
+    "width": 1600,
+    "components": 3,
+    "progressive": false
+   },
+   "size": [
+    1600,
+    900
+   ],
+   "kmeans": [
+    {
+     "share": 0.6644,
+     "centroid": "#fcf0f0",
+     "snapped": "#fcf0f0",
+     "x": 800,
+     "y": 0
+    },
+    {
+     "share": 0.1895,
+     "centroid": "#fbc1cf",
+     "snapped": "#fbc1cf",
+     "x": 1309,
+     "y": 16
+    },
+    {
+     "share": 0.0721,
+     "centroid": "#f31e4c",
+     "snapped": "#f21d4b",
+     "x": 1192,
+     "y": 350
+    },
+    {
+     "share": 0.0408,
+     "centroid": "#fa93ab",
+     "snapped": "#f993ab",
+     "x": 1339,
+     "y": 671
+    },
+    {
+     "share": 0.0158,
+     "centroid": "#bc072e",
+     "snapped": "#bc082d",
+     "x": 1374,
+     "y": 543
+    },
+    {
+     "share": 0.0135,
+     "centroid": "#071518",
+     "snapped": "#071518",
+     "x": 109,
+     "y": 27
+    },
+    {
+     "share": 0.0022,
+     "centroid": "#a1a5a7",
+     "snapped": "#a1a5a6",
+     "x": 64,
+     "y": 847
+    },
+    {
+     "share": 0.0017,
+     "centroid": "#4d5859",
+     "snapped": "#4e5859",
+     "x": 431,
+     "y": 539
+    }
+   ]
+  },
+  {
+   "file": "reference/AKAI 3.jpg.jpeg",
+   "bytes": 108935,
+   "container": "jpeg",
+   "jpeg": {
+    "height": 900,
+    "width": 1600,
+    "components": 3,
+    "progressive": false
+   },
+   "size": [
+    1600,
+    900
+   ],
+   "kmeans": [
+    {
+     "share": 0.6677,
+     "centroid": "#fcf0f0",
+     "snapped": "#fcf0f0",
+     "x": 800,
+     "y": 0
+    },
+    {
+     "share": 0.1832,
+     "centroid": "#fbc2d0",
+     "snapped": "#fbc3d0",
+     "x": 1316,
+     "y": 65
+    },
+    {
+     "share": 0.0652,
+     "centroid": "#f2204d",
+     "snapped": "#f1224c",
+     "x": 1044,
+     "y": 449
+    },
+    {
+     "share": 0.0503,
+     "centroid": "#fa97ae",
+     "snapped": "#fa96ae",
+     "x": 1343,
+     "y": 671
+    },
+    {
+     "share": 0.0154,
+     "centroid": "#bc062d",
+     "snapped": "#bd072d",
+     "x": 1266,
+     "y": 472
+    },
+    {
+     "share": 0.0144,
+     "centroid": "#071518",
+     "snapped": "#071518",
+     "x": 109,
+     "y": 27
+    },
+    {
+     "share": 0.002,
+     "centroid": "#92999b",
+     "snapped": "#929a9c",
+     "x": 103,
+     "y": 614
+    },
+    {
+     "share": 0.0017,
+     "centroid": "#495153",
+     "snapped": "#485253",
+     "x": 206,
+     "y": 29
+    }
+   ]
+  },
+  {
+   "file": "reference/AKAI 4.jpg.jpeg",
+   "bytes": 104618,
+   "container": "jpeg",
+   "jpeg": {
+    "height": 900,
+    "width": 1600,
+    "components": 3,
+    "progressive": false
+   },
+   "size": [
+    1600,
+    900
+   ],
+   "kmeans": [
+    {
+     "share": 0.6795,
+     "centroid": "#fcf0f0",
+     "snapped": "#fcf0f0",
+     "x": 800,
+     "y": 0
+    },
+    {
+     "share": 0.1992,
+     "centroid": "#fbbfce",
+     "snapped": "#fcbfce",
+     "x": 1320,
+     "y": 8
+    },
+    {
+     "share": 0.0587,
+     "centroid": "#f1234e",
+     "snapped": "#f2234f",
+     "x": 1156,
+     "y": 283
+    },
+    {
+     "share": 0.0313,
+     "centroid": "#f98ea8",
+     "snapped": "#f98ea8",
+     "x": 143,
+     "y": 420
+    },
+    {
+     "share": 0.0156,
+     "centroid": "#bc072d",
+     "snapped": "#bd072d",
+     "x": 1266,
+     "y": 472
+    },
+    {
+     "share": 0.0126,
+     "centroid": "#071518",
+     "snapped": "#071518",
+     "x": 109,
+     "y": 27
+    },
+    {
+     "share": 0.0018,
+     "centroid": "#8d9394",
+     "snapped": "#8d9295",
+     "x": 475,
+     "y": 518
+    },
+    {
+     "share": 0.0012,
+     "centroid": "#454e51",
+     "snapped": "#454f51",
+     "x": 457,
+     "y": 535
+    }
+   ]
+  },
+  {
+   "file": "reference/AKAI 5.jpg.jpeg",
+   "bytes": 102594,
+   "container": "jpeg",
+   "jpeg": {
+    "height": 900,
+    "width": 1600,
+    "components": 3,
+    "progressive": false
+   },
+   "size": [
+    1600,
+    900
+   ],
+   "kmeans": [
+    {
+     "share": 0.6714,
+     "centroid": "#fcf1f1",
+     "snapped": "#fcf0f0",
+     "x": 800,
+     "y": 0
+    },
+    {
+     "share": 0.1734,
+     "centroid": "#fbc6d3",
+     "snapped": "#fbc7d3",
+     "x": 1276,
+     "y": 24
+    },
+    {
+     "share": 0.0673,
+     "centroid": "#fb9db3",
+     "snapped": "#fc9db3",
+     "x": 1148,
+     "y": 567
+    },
+    {
+     "share": 0.0547,
+     "centroid": "#f4234d",
+     "snapped": "#f5224d",
+     "x": 1162,
+     "y": 273
+    },
+    {
+     "share": 0.0153,
+     "centroid": "#bd062d",
+     "snapped": "#bd072d",
+     "x": 1266,
+     "y": 472
+    },
+    {
+     "share": 0.0135,
+     "centroid": "#061417",
+     "snapped": "#061417",
+     "x": 231,
+     "y": 27
+    },
+    {
+     "share": 0.0024,
+     "centroid": "#889193",
+     "snapped": "#889093",
+     "x": 463,
+     "y": 562
+    },
+    {
+     "share": 0.0019,
+     "centroid": "#3a4445",
+     "snapped": "#3b4345",
+     "x": 399,
+     "y": 530
+    }
+   ]
+  },
+  {
+   "file": "reference/AKAI 6.jpg.jpeg",
+   "bytes": 95711,
+   "container": "jpeg",
+   "jpeg": {
+    "height": 900,
+    "width": 1600,
+    "components": 3,
+    "progressive": false
+   },
+   "size": [
+    1600,
+    900
+   ],
+   "kmeans": [
+    {
+     "share": 0.6762,
+     "centroid": "#fcf1f1",
+     "snapped": "#fcf0f0",
+     "x": 800,
+     "y": 0
+    },
+    {
+     "share": 0.1724,
+     "centroid": "#fbc7d3",
+     "snapped": "#fbc7d3",
+     "x": 1276,
+     "y": 24
+    },
+    {
+     "share": 0.0703,
+     "centroid": "#fb9eb4",
+     "snapped": "#fb9eb3",
+     "x": 1094,
+     "y": 627
+    },
+    {
+     "share": 0.0474,
+     "centroid": "#f4264e",
+     "snapped": "#f4264d",
+     "x": 1163,
+     "y": 285
+    },
+    {
+     "share": 0.0161,
+     "centroid": "#bd072e",
+     "snapped": "#be082e",
+     "x": 1403,
+     "y": 592
+    },
+    {
+     "share": 0.0138,
+     "centroid": "#071518",
+     "snapped": "#071518",
+     "x": 109,
+     "y": 27
+    },
+    {
+     "share": 0.002,
+     "centroid": "#939b9d",
+     "snapped": "#939b9d",
+     "x": 606,
+     "y": 566
+    },
+    {
+     "share": 0.0019,
+     "centroid": "#495356",
+     "snapped": "#485355",
+     "x": 413,
+     "y": 529
+    }
+   ]
+  },
+  {
+   "file": "reference/SAMPUL AKAI JPG.jpg.jpeg",
+   "bytes": 310745,
+   "container": "jpeg",
+   "jpeg": {
+    "height": 500,
+    "width": 1500,
+    "components": 3,
+    "progressive": false
+   },
+   "size": [
+    1500,
+    500
+   ],
+   "kmeans": [
+    {
+     "share": 0.5711,
+     "centroid": "#fbf3f1",
+     "snapped": "#fbf3f1",
+     "x": 1349,
+     "y": 30
+    },
+    {
+     "share": 0.2558,
+     "centroid": "#fbdde1",
+     "snapped": "#fbdce1",
+     "x": 1387,
+     "y": 209
+    },
+    {
+     "share": 0.1127,
+     "centroid": "#fbc2cf",
+     "snapped": "#fac2cf",
+     "x": 736,
+     "y": 308
+    },
+    {
+     "share": 0.0521,
+     "centroid": "#faa6bb",
+     "snapped": "#fba6bb",
+     "x": 1237,
+     "y": 386
+    },
+    {
+     "share": 0.0036,
+     "centroid": "#1c1d1d",
+     "snapped": "#1c1e1d",
+     "x": 652,
+     "y": 230
+    },
+    {
+     "share": 0.002,
+     "centroid": "#f46080",
+     "snapped": "#f46080",
+     "x": 699,
+     "y": 310
+    },
+    {
+     "share": 0.0015,
+     "centroid": "#969695",
+     "snapped": "#969694",
+     "x": 641,
+     "y": 232
+    },
+    {
+     "share": 0.0012,
+     "centroid": "#4d4d4c",
+     "snapped": "#4d4d4b",
+     "x": 619,
+     "y": 230
+    }
+   ]
+  }
+ ]
+}

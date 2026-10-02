@@ -1,0 +1,27 @@
+{
+ "source": "brand/LOGO AKAI PNG...png",
+ "method": "premultiplied 4x box downsample of the transparent PNG, marching squares at alpha 0.5, Douglas-Peucker 1.1px",
+ "grid": [
+  500,
+  500
+ ],
+ "viewBox": [
+  0,
+  0,
+  126.02,
+  100
+ ],
+ "light": {
+  "fill": "#fd394f",
+  "d": "M0 100L63.2 0L126.02 99.97L80.86 99.96L71.55 84.95L97.52 84.87L97.68 84.29L63.21 27.69L27.73 84.29L27.93 84.88L54.39 84.88L45.57 99.63Z"
+ },
+ "dark": {
+  "fill": "#ca0e2f",
+  "d": "M125.94 100L81.35 100.01L79.77 98.5L71.37 85.27L97.64 84.78L84.29 62.23L96.78 54.88L98.16 55.86Z"
+ },
+ "loops": {
+  "shape": 1,
+  "dark": 1,
+  "points": 12
+ }
+}

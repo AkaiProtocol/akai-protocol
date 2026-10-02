@@ -1,0 +1,17 @@
+{
+  "name": "akai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Akai - a live read on Robinhood Chain.",
+  "scripts": {
+    "prebuild": "node scripts/favicon.mjs",
+    "build": "vite build",
+    "preview": "vite preview",
+    "gates": "node gates/run.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.49.0",
+    "vite": "^6.0.0"
+  }
+}

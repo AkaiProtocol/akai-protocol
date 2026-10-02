@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-pref="system">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akai | Discounted AI on Robinhood Chain</title>
+  <meta name="description" content="Akai ties a wallet's $AKAI balance to discounted AI usage on Robinhood Chain, alongside the chain's live vitals." />
+  <meta property="og:title" content="Akai | Discounted AI on Robinhood Chain" />
+  <meta property="og:description" content="Hold $AKAI, cut the bill: discounted AI access built on Robinhood Chain." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://akai.lol" />
+  <meta name="theme-color" content="" />
+  <link rel="canonical" href="https://akai.lol" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      var pref = "system";
+      try { pref = localStorage.getItem("akai-theme") || "system"; } catch (e) {}
+      if (pref !== "light" && pref !== "dark") pref = "system";
+      var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      d.setAttribute("data-pref", pref);
+      d.setAttribute("data-theme", pref === "system" ? (dark ? "dark" : "light") : pref);
+    })();
+  </script>
+  <link rel="stylesheet" href="/src/tokens.css" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Jump to main</a>
+  <div class="progress" aria-hidden="true"><span class="progress__bar" id="progress"></span></div>
+
+  <div class="top" id="top">
+    <div class="ca" id="ca-bar">
+      <div class="wrap ca__row">
+        <button type="button" class="ca__btn" id="ca-btn" data-state="absent" disabled aria-label="Contract address, not stated yet">
+          <span class="ca__tag">CA</span>
+          <span class="ca__value" id="ca-value" aria-hidden="true">0x········································</span>
+          <span class="ca__hint" id="ca-hint">Not stated yet</span>
+          <span class="ca__icon" aria-hidden="true">
+            <svg class="i-copy" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6.5A2.5 2.5 0 0 1 7.5 4H15"/></svg>
+            <svg class="i-check" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+          </span>
+        </button>
+        <span class="sr-only" id="ca-live" role="status" aria-live="polite"></span>
+      </div>
+    </div>
+
+    <header class="bar">
+      <div class="wrap bar__row">
+        <a class="brand" href="#top" aria-label="Akai, back to top">
+          <svg class="brand__mark" viewBox="0 0 126.02 100" width="32" height="25" aria-hidden="true"><path class="brand__light" d="M0 100L63.2 0L126.02 99.97L80.86 99.96L71.55 84.95L97.52 84.87L97.68 84.29L63.21 27.69L27.73 84.29L27.93 84.88L54.39 84.88L45.57 99.63Z" /><path class="brand__dark" d="M125.94 100L81.35 100.01L79.77 98.5L71.37 85.27L97.64 84.78L84.29 62.23L96.78 54.88L98.16 55.86Z" /></svg>
+          <span class="brand__word">Akai</span>
+        </a>
+
+        <nav class="nav" id="menu" aria-label="Primary">
+          <a class="nav__link" href="#pulse">Pulse</a>
+          <a class="nav__link" href="#pairs">Pairs</a>
+          <a class="nav__link" href="#method">Method</a>
+          <a class="nav__link" href="#ledger">Ledger</a>
+          <a class="nav__link" href="#faq">FAQ</a>
+        </nav>
+
+        <div class="bar__end">
+          <span class="socials" id="socials">
+            <button type="button" class="icon-btn" data-social="x" disabled aria-label="X account, not stated yet" title="Not stated yet">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </button>
+            <button type="button" class="icon-btn" data-social="github" disabled aria-label="GitHub, not stated yet" title="Not stated yet">
+              <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            </button>
+          </span>
+          <button type="button" class="icon-btn menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+            <svg class="i-open" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+            <svg class="i-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <svg class="hero__layer" data-depth="0.12" viewBox="0 0 800 800" fill="none" stroke="currentColor" stroke-width="1"><circle cx="400" cy="400" r="390"/><circle cx="400" cy="400" r="300"/><circle cx="400" cy="400" r="210"/></svg>
+        <svg class="hero__layer hero__layer--b" data-depth="0.28" viewBox="0 0 800 800" fill="none" stroke="currentColor" stroke-width="1"><rect x="160" y="160" width="480" height="480" rx="48"/><rect x="250" y="250" width="300" height="300" rx="32"/></svg>
+        <span class="hero__disc" data-depth="0.5"></span>
+        <span class="hero__grid" data-depth="0.06"></span>
+      </div>
+
+      <div class="wrap hero__inner">
+        <div class="pill" id="status-pill" data-state="connecting" data-reveal style="--i:0">
+          <span class="pill__dot" aria-hidden="true"></span>
+          <span class="pill__text" id="status-text" role="status">Connecting</span>
+        </div>
+        <h1 class="hero__title" id="hero-title" data-reveal style="--i:1">Hold $AKAI.<br />Spend far less on AI.</h1>
+        <p class="hero__lede" data-reveal style="--i:2">Akai links a wallet's $AKAI balance to discounted machine-intelligence usage on Robinhood Chain, trimming costs by as much as 95% inside a daily allowance.</p>
+        <div class="hero__cta" data-reveal style="--i:3">
+          <a class="btn btn--solid" href="#pulse">Check the chain</a>
+          <a class="btn btn--ghost" href="#method">How access works</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why" aria-labelledby="why-title">
+      <div class="wrap">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Why hold</p>
+          <h2 class="section__title" id="why-title">The balance is the key.</h2>
+        </header>
+        <div class="pillars">
+          <article class="card pillar" data-reveal style="--i:0"><h3 class="pillar__title">Lower cost, same tools</h3><p class="pillar__text">Wallet holders reach AI services at prices cut by as much as 95%, tuned for ordinary daily use.</p></article>
+          <article class="card pillar" data-reveal style="--i:1"><h3 class="pillar__title">Ownership decides</h3><p class="pillar__text">Your $AKAI balance, instead of any monthly plan, determines whether the discount applies.</p></article>
+          <article class="card pillar" data-reveal style="--i:2"><h3 class="pillar__title">Chain-native by design</h3><p class="pillar__text">Ownership, balance reads and access checks all happen onchain, so access follows whatever you hold.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pulse" aria-labelledby="pulse-title">
+      <div class="wrap">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Pulse</p>
+          <h2 class="section__title" id="pulse-title">The network underneath.</h2>
+          <p class="section__lede">Akai runs on Robinhood Chain, so its vital signs sit near the top. Four readings, each refreshed on separate timers. <span class="sync" id="sync">Waiting for the first reply.</span></p>
+        </header>
+
+        <div class="stats">
+          <article class="card stat" data-reveal style="--i:0" aria-busy="true" data-card="block">
+            <h3 class="stat__label">Block height</h3>
+            <p class="stat__value"><span class="num" data-num="block" data-state="loading">0</span></p>
+            <p class="stat__note">Node RPC, every 5 seconds</p>
+          </article>
+          <article class="card stat" data-reveal style="--i:1" aria-busy="true" data-card="gas">
+            <h3 class="stat__label">Gas price</h3>
+            <p class="stat__value"><span class="num" data-num="gas" data-state="loading">0</span><span class="stat__unit">gwei</span></p>
+            <p class="stat__note">Node RPC, every 5 seconds</p>
+          </article>
+          <article class="card stat" data-reveal style="--i:2" aria-busy="true" data-card="tvl">
+            <h3 class="stat__label">Value locked</h3>
+            <p class="stat__value"><span class="stat__unit stat__unit--lead">$</span><span class="num" data-num="tvl" data-state="loading">0</span></p>
+            <p class="stat__note">DefiLlama, every minute</p>
+          </article>
+          <article class="card stat" data-reveal style="--i:3" aria-busy="true" data-card="chain">
+            <h3 class="stat__label">Chain id</h3>
+            <p class="stat__value"><span class="num" data-num="chainid" data-state="loading">0</span></p>
+            <p class="stat__note" id="chain-note">Checked against the node</p>
+          </article>
+        </div>
+
+        <div class="charts">
+          <article class="card chart" data-reveal style="--i:0" aria-busy="true" data-card="tvl-series">
+            <header class="chart__head">
+              <h3 class="stat__label">Locked value, daily</h3>
+              <p class="chart__meta" id="tvl-meta">&nbsp;</p>
+            </header>
+            <div class="spark" id="spark" data-state="loading" role="img" aria-label="Daily locked value, loading">
+              <svg viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
+                <path class="spark__area" id="spark-area" d="" />
+                <path class="spark__line" id="spark-line" d="" pathLength="1" />
+              </svg>
+              <span class="skeleton spark__skeleton"></span>
+            </div>
+          </article>
+          <article class="card chart" data-reveal style="--i:1" aria-busy="true" data-card="trail">
+            <header class="chart__head">
+              <h3 class="stat__label">Gas trail</h3>
+              <p class="chart__meta" id="trail-meta">&nbsp;</p>
+            </header>
+            <div class="trail" id="trail" data-state="loading" role="img" aria-label="Recent gas readings, loading"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tape" aria-label="Pairs on the tape" data-reveal>
+      <div class="tape__viewport" id="tape" data-marquee data-state="loading">
+        <div class="tape__track" id="tape-track"></div>
+      </div>
+    </section>
+
+    <section class="section" id="pairs" aria-labelledby="pairs-title">
+      <div class="wrap">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Pairs</p>
+          <h2 class="section__title" id="pairs-title">Deepest pools first.</h2>
+          <p class="section__lede">Raw index output, sorted by liquidity. A listing here is not a vouch.</p>
+        </header>
+        <div class="table card" id="pairs-table" role="table" aria-label="Trading pairs on Robinhood Chain" data-reveal data-state="loading" aria-busy="true">
+          <div class="table__head" role="row">
+            <span role="columnheader">Pair</span>
+            <span role="columnheader" class="r">Price</span>
+            <span role="columnheader" class="r">24h</span>
+            <span role="columnheader" class="r">Liquidity</span>
+            <span role="columnheader" class="r">Volume 24h</span>
+          </div>
+          <div class="table__body" id="pairs-body" role="rowgroup"></div>
+          <p class="table__empty" id="pairs-empty" hidden>No pools came back from the index. Retry shortly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="method" aria-labelledby="method-title">
+      <div class="wrap">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Access</p>
+          <h2 class="section__title" id="method-title">Four moves from wallet to discount.</h2>
+        </header>
+        <ol class="steps">
+          <li class="step" data-reveal style="--i:0"><span class="step__n">01</span><h3 class="step__title">Connect a wallet</h3><p class="step__text">Point Akai at an address you control. The balance is read straight off the chain.</p></li>
+          <li class="step" data-reveal style="--i:1"><span class="step__n">02</span><h3 class="step__title">Hold $AKAI</h3><p class="step__text">Keeping $AKAI inside that address is what switches the discount on.</p></li>
+          <li class="step" data-reveal style="--i:2"><span class="step__n">03</span><h3 class="step__title">Run AI on discount</h3><p class="step__text">Requests are priced as much as 95% under the standard rate, built for everyday work.</p></li>
+          <li class="step" data-reveal style="--i:3"><span class="step__n">04</span><h3 class="step__title">Mind the allowance</h3><p class="step__text">A daily allowance bounds the discounted volume, so a very heavy day can outrun it.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="ledger" aria-labelledby="ledger-title">
+      <div class="wrap">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Ledger</p>
+          <h2 class="section__title" id="ledger-title">Confirmed facts and missing ones.</h2>
+          <p class="section__lede">Each outside fact has one record, with a plain status attached. This list is generated from those records.</p>
+        </header>
+        <ul class="ledger card" id="ledger-list" data-reveal></ul>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap wrap--narrow">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section__title" id="faq-title">Short answers.</h2>
+        </header>
+        <div class="faq" data-reveal>
+          <details class="faq__item"><summary class="faq__q"><span>Akai, briefly?</span><i class="faq__chev" aria-hidden="true"></i></summary><div class="faq__a"><div><p>A Robinhood Chain project that turns holding $AKAI into cheaper access to AI tools.</p></div></div></details>
+          <details class="faq__item"><summary class="faq__q"><span>Has $AKAI launched?</span><i class="faq__chev" aria-hidden="true"></i></summary><div class="faq__a"><div><p>No contract address is stated yet. The slot pinned above everything stays inert until a real address is published.</p></div></div></details>
+          <details class="faq__item"><summary class="faq__q"><span>How large is the discount?</span><i class="faq__chev" aria-hidden="true"></i></summary><div class="faq__a"><div><p>The stated ceiling is 95% below standard pricing, bounded by a daily allowance. Actual savings track your usage.</p></div></div></details>
+          <details class="faq__item"><summary class="faq__q"><span>Does Akai touch my funds?</span><i class="faq__chev" aria-hidden="true"></i></summary><div class="faq__a"><div><p>Connecting a wallet lets Akai read the balance it holds. This site has no connect button and never requests a signature.</p></div></div></details>
+          <details class="faq__item"><summary class="faq__q"><span>Where do the chain figures originate?</span><i class="faq__chev" aria-hidden="true"></i></summary><div class="faq__a"><div><p>Height and gas arrive from the chain node. Locked value comes from DefiLlama. Pairs come from DexScreener.</p></div></div></details>
+          <details class="faq__item"><summary class="faq__q"><span>Why is a card showing a dash?</span><i class="faq__chev" aria-hidden="true"></i></summary><div class="faq__a"><div><p>That feed did not reply. Akai leaves the cell empty instead of inventing a figure.</p></div></div></details>
+          <details class="faq__item"><summary class="faq__q"><span>Do listed pools carry an endorsement?</span><i class="faq__chev" aria-hidden="true"></i></summary><div class="faq__a"><div><p>No. Pools open freely, so treat each row as unvetted and verify it personally.</p></div></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta card" data-reveal>
+          <h2 class="cta__title" id="cta-title">Build with less overhead.</h2>
+          <p class="cta__text">Product news lands on X and GitHub first. Until a contract address is published, no other line here counts as a purchase signal.</p>
+          <a class="btn btn--solid" href="#top">Return to top</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__row">
+      <div class="foot__col">
+        <a class="brand brand--foot" href="#top" aria-label="Akai, back to top"><span class="brand__word">Akai</span></a>
+        <p class="foot__line">akai.lol</p>
+        <p class="foot__line foot__flag" id="foot-flag"></p>
+      </div>
+      <nav class="foot__nav" aria-label="Footer">
+        <a class="nav__link" href="#pulse">Pulse</a>
+        <a class="nav__link" href="#pairs">Pairs</a>
+        <a class="nav__link" href="#method">Method</a>
+        <a class="nav__link" href="#ledger">Ledger</a>
+        <a class="nav__link" href="#faq">FAQ</a>
+      </nav>
+      <div class="seg" role="group" aria-label="Color theme" id="theme-seg">
+        <button type="button" class="seg__btn" data-theme-set="light" aria-pressed="false">Light</button>
+        <button type="button" class="seg__btn" data-theme-set="dark" aria-pressed="false">Dark</button>
+        <button type="button" class="seg__btn" data-theme-set="system" aria-pressed="true">System</button>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

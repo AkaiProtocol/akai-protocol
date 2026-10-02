@@ -1,0 +1,123 @@
+/*
+ * tokens.css - the ONLY file allowed to hold color literals.
+ *
+ * PROVENANCE (sampled 2026-10-02 from the files in brand/ and reference/):
+ * method   k-means, k=8, RGB, farthest-point init, 12 iterations, run per file
+ *          (tools/sample-brand.mjs -> tools/brand-sample.json).
+ * snapping every centroid is replaced by the nearest REAL pixel, so each hex
+ *          below is an exact pixel value taken from a named file at x,y.
+ * alpha    brand/LOGO AKAI PNG...png is RGBA 8-bit with pure-black RGB under
+ *          zero alpha (3,733,598 px); all resizing of it is premultiplied.
+ *
+ *   --paper     #f8f4f1  brand/LOGO AKAI PNG.png          @0,0
+ *   --blush     #fcf0f0  reference/AKAI 2.jpg.jpeg        @800,0
+ *   --rose-100  #fbc7d3  reference/AKAI 5.jpg.jpeg        @1276,24
+ *   --rose-300  #fba2b6  reference/AKAI 1.jpg.jpeg        @1541,168
+ *   --red       #fd394f  brand/LOGO AKAI PNG...png        @989,622
+ *   --red-hot   #f2234f  reference/AKAI 4.jpg.jpeg        @1156,283
+ *   --red-deep  #ca0e2f  brand/LOGO AKAI PNG...png        @1245,1073
+ *   --night     #071518  reference/AKAI 2.jpg.jpeg        @109,27
+ *
+ * Everything else below is derived from these with color-mix(): no other
+ * literal exists anywhere in the project.
+ */
+
+:root {
+  /* sampled primitives */
+  --paper: #f8f4f1;
+  --blush: #fcf0f0;
+  --rose-100: #fbc7d3;
+  --rose-300: #fba2b6;
+  --red: #fd394f;
+  --red-hot: #f2234f;
+  --red-deep: #ca0e2f;
+  --night: #071518;
+
+  /* roles - light */
+  --bg: var(--paper);
+  --surface-1: var(--blush);
+  --surface-2: color-mix(in srgb, var(--rose-100) 30%, var(--paper));
+  --surface-3: color-mix(in srgb, var(--rose-100) 62%, var(--paper));
+  --ink: var(--night);
+  --ink-2: color-mix(in srgb, var(--night) 78%, var(--paper));
+  --ink-3: color-mix(in srgb, var(--night) 60%, var(--paper));
+  --ink-inverse: var(--paper);
+  --accent: var(--red-deep);
+  --accent-bright: var(--red);
+  --accent-ink: var(--paper);
+  --line: color-mix(in srgb, var(--night) 12%, transparent);
+  --line-strong: color-mix(in srgb, var(--night) 24%, transparent);
+  --flash: color-mix(in srgb, var(--red) 24%, transparent);
+  --shadow: color-mix(in srgb, var(--red-deep) 28%, transparent);
+  --mask-on: var(--ink);
+  --mask-off: transparent;
+
+  /* spacing, 4px scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* shape */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-pill: 999px;
+  --tap: 48px;
+  --gutter: 16px;
+  --max: 1160px;
+
+  /* motion */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-soft: cubic-bezier(0.5, 0, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur: 200ms;
+  --dur-slow: 320ms;
+  --dur-film: 640ms;
+  --stagger: 70ms;
+
+  /* type */
+  --font-text: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* layers */
+  --z-top: 50;
+  --z-progress: 60;
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: var(--night);
+  --surface-1: color-mix(in srgb, var(--paper) 7%, var(--night));
+  --surface-2: color-mix(in srgb, var(--paper) 11%, var(--night));
+  --surface-3: color-mix(in srgb, var(--red) 16%, var(--night));
+  --ink: var(--paper);
+  --ink-2: color-mix(in srgb, var(--paper) 78%, var(--night));
+  --ink-3: color-mix(in srgb, var(--paper) 62%, var(--night));
+  --ink-inverse: var(--night);
+  --accent: var(--red);
+  --accent-bright: var(--red);
+  --accent-ink: var(--night);
+  --line: color-mix(in srgb, var(--paper) 12%, transparent);
+  --line-strong: color-mix(in srgb, var(--paper) 24%, transparent);
+  --flash: color-mix(in srgb, var(--red) 30%, transparent);
+  --shadow: color-mix(in srgb, var(--night) 70%, transparent);
+
+  color-scheme: dark;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 32px;
+  }
+}
